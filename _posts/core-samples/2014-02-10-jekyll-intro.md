@@ -6,7 +6,7 @@ tags : [intro, beginner, jekyll, tutorial]
 ---
 {% include JB/setup %}
 
-![Jekyll Logo]({{ site.url }}/jekyll-material-design/assets/images/jekyll-logo-light-solid.png)
+![Jekyll Logo]({{ site.url }}/assets/images/jekyll-logo-light-solid.png)
 
 Jekyll is a parsing engine bundled as a ruby gem used to build static websites from
 dynamic components such as templates, partials, liquid code, markdown, etc. Jekyll is known as "a simple, blog aware, static site generator".
@@ -17,7 +17,7 @@ dynamic components such as templates, partials, liquid code, markdown, etc. Jeky
 
 Jekyll is a ruby gem you install on your local system.
 Once there you can call `jekyll --server` on a directory and provided that directory
-is setup in a way jekyll expects, it will do magic stuff like parse markdown/textile files, 
+is setup in a way jekyll expects, it will do magic stuff like parse markdown/textile files,
 compute categories, tags, permalinks, and construct your pages from layout templates and partials.
 
 Once parsed, Jekyll stores the result in a self-contained static `_site` folder.
@@ -61,7 +61,7 @@ Be aware that core concepts are introduced in rapid succession without code exam
 This information is not intended to specifically teach you how to do anything, rather it
 is intended to give you the _full picture_ relative to what is going on in Jekyll-world.
 
-Learning these core concepts should help you avoid common frustrations and ultimately 
+Learning these core concepts should help you avoid common frustrations and ultimately
 help you better understand the code examples contained throughout Jekyll-Bootstrap.
 
 
@@ -106,7 +106,7 @@ Jekyll expects your website directory to be laid out like so:
 	the naming format is required to be `@YEAR-MONTH-DATE-title.MARKUP@`.
 
 - **\_site**  
-	This is where the generated site will be placed once Jekyll is done transforming it. 
+	This is where the generated site will be placed once Jekyll is done transforming it.
 
 - **assets**  
 	This folder is not part of the standard jekyll structure.
@@ -141,7 +141,7 @@ Posts are created by properly formatting a file and placing it the `_posts` fold
     rake post title="A Title" [date="2012-02-09"] [tags=[tag1, tag2]]
 
 **Formatting**  
-A post must have a valid filename in the form `YEAR-MONTH-DATE-title.MARKUP` and be placed in the `_posts` directory. 
+A post must have a valid filename in the form `YEAR-MONTH-DATE-title.MARKUP` and be placed in the `_posts` directory.
 If the data format is invalid Jekyll will not recognize the file as a post. The date and title are automatically parsed from the filename of the post file.
 Additionally, each file must have [YAML Front-Matter](https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter) prepended to its content.
 YAML Front-Matter is a valid YAML syntax specifying meta-data for the given file.
@@ -219,7 +219,7 @@ The page variable holds accessible data for the given page or post being rendere
 Templates are created by properly formatting a file and placing it in the `_layouts` directory.
 
 **Formatting**  
-Templates should be coded in HTML and contain YAML Front Matter. 
+Templates should be coded in HTML and contain YAML Front Matter.
 All templates can contain Liquid code to work with your site's data.
 
 **Rending Page/Post Content in a Template**  
@@ -239,7 +239,7 @@ Render the content variable wherever you want your main content to be injected i
 
 ### Sub-Templates
 
-Sub-templates are exactly templates with the only difference being they 
+Sub-templates are exactly templates with the only difference being they
 define another "root" layout/template within their YAML Front Matter.
 This essentially means a template will render inside of another template.
 
@@ -259,29 +259,29 @@ This is mainly due to the fact that Jekyll templates must use the Liquid Templat
 ### What is Liquid?
 
 [Liquid](https://github.com/Shopify/liquid) is a secure templating language developed by [Shopify](http://shopify.com).
-Liquid is designed for end-users to be able to execute logic within template files 
+Liquid is designed for end-users to be able to execute logic within template files
 without imposing any security risk on the hosting server.
 
 Jekyll uses Liquid to generate the post content within the final page layout structure and as the primary interface for working with
-your site and post/page data. 
+your site and post/page data.
 
 ### Why Do We Have to Use Liquid?
 
-GitHub uses Jekyll to power [GitHub Pages](http://pages.github.com/). 
+GitHub uses Jekyll to power [GitHub Pages](http://pages.github.com/).
 GitHub cannot afford to run arbitrary code on their servers so they lock developers down via Liquid.
 
 ### Liquid is Not Programmer-Friendly.
 
 The short story is liquid is not real code and its not intended to execute real code.
 The point being you can't do jackshit in liquid that hasn't been allowed explicitly by the implementation.
-What's more you can only access data-structures that have been explicitly passed to the template. 
+What's more you can only access data-structures that have been explicitly passed to the template.
 
-In Jekyll's case it is not possible to alter what is passed to Liquid without hacking the gem or running custom plugins. 
+In Jekyll's case it is not possible to alter what is passed to Liquid without hacking the gem or running custom plugins.
 Both of which cannot be supported by GitHub Pages.
 
 As a programmer - this is very frustrating.
 
-But rather than look a gift horse in the mouth we are going to 
+But rather than look a gift horse in the mouth we are going to
 suck it up and view it as an opportunity to work around limitations and adopt client-side solutions when possible.
 
 **Aside**   
@@ -295,7 +295,7 @@ you are better off sticking with ruby. Toward that end I've built [Mustache-with
 Static assets are any file in the root or non-underscored subfolders that are not pages.
 That is they have no valid YAML Front Matter and are thus not treated as Jekyll Pages.
 
-Static assets should be used for images, css, and javascript files. 
+Static assets should be used for images, css, and javascript files.
 
 
 
@@ -318,7 +318,7 @@ And thus there are two main types of file formats needed for this parsing.
 	Since include files are simply injected into templates they are essentially parsed as if they were native to the template.
 
 **Arbitrary files and folders.**   
-Files that _are not_ valid pages are treated as static content and pass through 
+Files that _are not_ valid pages are treated as static content and pass through
 Jekyll untouched and reside on your blog in the exact structure and format they originally existed in.
 
 ### Formatting Files for Parsing.
@@ -355,14 +355,14 @@ That is to say loading a post file into a template file that refers to another t
 
 ## How Jekyll Generates the Final Static Files.
 
-Ultimately, Jekyll's job is to generate a static representation of your website. 
+Ultimately, Jekyll's job is to generate a static representation of your website.
 The following is an outline of how that's done:
 
 1. **Jekyll collects data.**   
   Jekyll scans the posts directory and collects all posts files as post objects. It then scans the layout assets and collects those and finally scans other directories in search of pages.
 
 2. **Jekyll computes data.**   
-  Jekyll takes these objects, computes metadata (permalinks, tags, categories, titles, dates) from them and constructs one 
+  Jekyll takes these objects, computes metadata (permalinks, tags, categories, titles, dates) from them and constructs one
   big `site` object that holds all the posts, pages, layouts, and respective metadata.
   At this stage your site is one big computed ruby object.
 
@@ -371,14 +371,14 @@ The following is an outline of how that's done:
   Once the post is parsed and liquified inside the the proper layout structure, the layout itself is "liquified".   
 	**Liquification** is defined as follows: Jekyll initiates a Liquid template, and passes a simpler hash representation of the ruby site object as well as a simpler
   hash representation of the ruby post object. These simplified data structures are what you have access to in the templates.
-	
+
 3. **Jekyll generates output.**   
 	Finally the liquid templates are "rendered", thereby processing any liquid syntax provided in the templates
 	and saving the final, static representation of the file.
- 
+
 **Notes.**  
-Because Jekyll computes the entire site in one fell swoop, each template is given access to 
-a global `site` hash that contains useful data. It is this data that you'll iterate through and format 
+Because Jekyll computes the entire site in one fell swoop, each template is given access to
+a global `site` hash that contains useful data. It is this data that you'll iterate through and format
 using the Liquid tags and filters in order to render it onto a given page.
 
 Remember, in Jekyll you are an end-user. Your API has only two components:
