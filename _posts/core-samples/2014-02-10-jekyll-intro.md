@@ -141,6 +141,7 @@ Posts are created by properly formatting a file and placing it the `_posts` fold
 
 
 ### Raniero Facchini
+
 ### Professor Longo Valter california
 
     rake post title="A Title" [date="2012-02-09"] [tags=[tag1, tag2]]
