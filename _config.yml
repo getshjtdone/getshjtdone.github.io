@@ -13,7 +13,7 @@ excerpt_separator: "<!--more-->"
 #
 title : Getshjtdone
 tagline: Done your Shit fast
-author : Antonio Trento
+author :
   name : Getshjtdone
   email : lantoniotrento@gmail.com
   github : antoniotrento
@@ -85,7 +85,7 @@ JB :
   comments :
     provider : false
     disqus :
-      short_name : getshjtdone
+      short_name : jekyllbootstrap
     livefyre :
       site_id : 123
     intensedebate :
