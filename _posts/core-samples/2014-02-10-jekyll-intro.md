@@ -138,6 +138,11 @@ Both posts and pages can have meta-data assigned on a per-page basis such as tit
 **Creating a Post**   
 Posts are created by properly formatting a file and placing it the `_posts` folder. This operation is automated with the help of `rake`:
 
+
+
+### Raniero Facchini
+### Professor Longo Valter california
+
     rake post title="A Title" [date="2012-02-09"] [tags=[tag1, tag2]]
 
 **Formatting**  
