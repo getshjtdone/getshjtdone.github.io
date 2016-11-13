@@ -17,16 +17,14 @@ tagline: Jekyll bootstrap3 for Github-pages
                 <p class="lead">
                     Tagged under: {{post.tags | array_to_sentence_string}}
                 </p>
-                <p><span class="glyphicon glyphicon-time"></span> Posted on {{ post.date | date_to_string }} <a class="btn btn-default" href="path/to/settings" aria-label="Settings">
-  <i class="fa fa-cog" aria-hidden="true"></i>
-</a></p>
+                <p><span class="glyphicon glyphicon-time"></span> Posted on {{ post.date | date_to_string }}</p>
                 <!-- <hr>
                 <img class="img-responsive" src="http://placehold.it/900x300" alt=""> -->
                 <hr>
 		{{ post.excerpt }}
     <div class="row tim-row" id="display-buttons" data-class="btn-info">
-      <div class="col-md-4 col-sm-6">
-                <a href="{{ BASE_PATH }}{{ post.url }}" class="btn btn-default btn-block btn-lg btn-info btn-fill">Read More <i class="fa fa-cog" aria-hidden="true"></i></a>
+      <div class="col-md-3 col-sm-6">
+                <a href="{{ BASE_PATH }}{{ post.url }}" class="btn btn-block btn-lg btn-info btn-fill">Read More <i class="fa fa-fog" aria-hidden="true"></i></a>
       </div>
   </div>
 
