@@ -16,14 +16,20 @@
     <div class="space"></div>
 
 
+    <div class="tim-title">
+        <h1>Tagged under: <small>"{{post.tags | array_to_sentence_string}}</small></h1>
+    </div>
+    <div class="tim-title">
+        <h2><span class="glyphicon glyphicon-time"></span> Posted on <small>{{ post.date | date_to_string }}</small></h2>
+    </div>
 
 
-
+<!--
     <p class="lead">
         Tagged under: {{post.tags | array_to_sentence_string}}
     </p>
     <h2><span class="glyphicon glyphicon-time"></span> Posted on {{ post.date | date_to_string }}</h2>
-
+-->
     <div class="content">
       {{ content }}
     </div>
