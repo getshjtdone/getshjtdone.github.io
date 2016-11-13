@@ -13,11 +13,14 @@ tagline: Jekyll bootstrap3 for Github-pages
                 <!-- Blog Post Template on Index page -->
                 <h2>
                     <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+                     <a class="btn btn-default" href="/path/to/settings" aria-label="Settings">
+  <i class="fa fa-cog" aria-hidden="true"></i>
+</a>
                 </h2>
                 <p class="lead">
                     Tagged under: {{post.tags | array_to_sentence_string}}
                 </p>
-                <p><span class="glyphicon glyphicon-time"></span> Posted on {{ post.date | date_to_string }}  <span class="glyphicons glyphicons-fingerprint-ok"></span></p>
+                <p><span class="glyphicon glyphicon-time"></span> Posted on {{ post.date | date_to_string }}</p>
                 <!-- <hr>
                 <img class="img-responsive" src="http://placehold.it/900x300" alt=""> -->
                 <hr>
