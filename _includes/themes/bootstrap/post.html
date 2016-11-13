@@ -13,8 +13,25 @@
 
 <div class="main">
     <div class="container tim-container">
-
     <div class="space"></div>
+
+
+    <div class="tim-typo">
+        <h1>Special Header</span>Header with special subtitle <small class="subtitle">".subtitle" is a special class for h1 title</small> </h1>
+    </div>
+    <div class="tim-typo">
+        <h2>Header with small subtitle <small>".small" is a tag for the headers</small> </h2>
+    </div>
+
+
+    <p class="lead">
+        Tagged under: {{post.tags | array_to_sentence_string}}
+    </p>
+    <p><span class="glyphicon glyphicon-time"></span> Posted on {{ post.date | date_to_string }}</p>
+
+
+
+
     <div class="date">
       <span>{{ page.date | date_to_long_string }}</span>
     </div>
