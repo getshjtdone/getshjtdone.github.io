@@ -45,13 +45,13 @@
 
     <ul class="pagination">
       {% if page.previous %}
-        <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&laquo;</a></li>
+        <li class="prev class="active""><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&laquo;</a></li>
       {% else %}
         <li class="prev disabled"><a>&laquo;</a></li>
       {% endif %}
         <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
       {% if page.next %}
-        <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">&raquo;</a></li>
+        <li class="next class="active""><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">&raquo;</a></li>
       {% else %}
         <li class="next disabled"><a>&raquo;</a></li>
       {% endif %}
