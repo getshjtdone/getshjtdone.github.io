@@ -3,7 +3,7 @@ layout: post
 category : lessons
 tagline: "Supporting tagline"
 tags : [intro, beginner, jekyll, tutorial]
-header-img: assets/imgages/cover_4.jpg
+header-img: assets/images/cover_4.jpg
 author:     Antonio Trento
 ---
 {% include JB/setup %}
