@@ -1,4 +1,4 @@
-get-shit-done
+get-shjt-done
 =============
 
 A free UI Kit built on Twitter Bootstrap
