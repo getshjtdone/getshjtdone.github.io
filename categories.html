@@ -44,22 +44,27 @@ group: navigation
 
     </small></h2>
       {% for category in site.categories %}
-      <div class="col-md-12 content-panel articles">
+
         <h2 id="{{ category | first }}-ref">{{ category | first }}</h2>
-        <ul>
+        <ul class="fa-ul">
           {% for posts in category %}
             {% for post in posts %}
-              <li>
+            {% if forloop.first %}{% endif %}
+            <li><i class="fa-li fa fa-square fa-2x"></i> <!-- fa-arrow-right -->
+              <h1>
                 <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                <small class="hidden-xs">{{ post.date | date: "%B %-d, %Y" }}</small>
-              </li>
+                <small class="subtitle">{{ post.date | date: "%B %-d, %Y" }}</small>
+              </h1>
+            </li>
             {% endfor %}
           {% endfor %}
 
         </ul>
-      </div>
+
       {% endfor %}
 
     <!-- end container extras -->
+
+
 
 </div>
