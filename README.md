@@ -1,9 +1,9 @@
 get-shjt-done
 =============
 
-A free UI Kit built on Twitter Bootstrap
+A free UI Kit built on Twitter Bootstrap and jekyll
 
-If you want to see more information, please go to http://www.creative-tim.com/product/get-shit-done-kit
+If you want to see more information about the theme, please go to http://www.creative-tim.com/product/get-shit-done-kit
 
 'Get Shit Done' kit is a beautiful resource built for Bootstrap. We have redesigned all its components to make it look flat, minimalist and easy to use. We are proud of this new Bootstrap skin and the possibilities for customisation.
 
@@ -25,7 +25,7 @@ Publish your static website/blog on GitHub Pages using [Jekyll](https://jekyllrb
 
 This project is based on [Jekyll-Bootrap-3](https://github.com/dbtek/jekyll-bootstrap-3). It also includes the [Paper theme](http://bootswatch.com/paper) from [Bootswatch.com](http://bootswatch.com).
 
-![Jekyll-material-design Thumbnail](https://github.com/sentenza/jekyll-material-design/blob/master/assets/images/jekyll-bootstrap.png "Jekyll material design default theme")
+![Jekyll-material-design Thumbnail](https://getshjtdone.github.io/assets/images/jekyll-bootstrap.png "Jekyll material design default theme")
 
 
 #### How it works
