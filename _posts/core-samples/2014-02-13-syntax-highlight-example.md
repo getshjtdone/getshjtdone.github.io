@@ -9,6 +9,7 @@ tags : [jekyll, code]
 An example post about code insertion into posts.
 
 <!--more-->
+
 ## Testing code snippet highlight
 
 The following example shows how to highlight a piece of code throughout the use of pygments:
@@ -61,10 +62,10 @@ object RetryingActor {
   case class Ask[T](target: ActorRef, message: T, rate: FiniteDuration,
   maxAttempts: Int)
     case object Retry
-    
+
       case class RetryException(attempts: Int) extends Exception(s"Cannot retry
       after $attempts attempts")
-      
+
         def props[T] = Props[RetryingActor]
         }
 ```
