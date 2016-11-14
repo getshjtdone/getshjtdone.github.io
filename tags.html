@@ -5,7 +5,7 @@ header: Posts By Tag
 group: navigation
 ---
 {% include JB/setup %}
-
+<div class="container tim-container" style="max-width:800px; padding-top:100px">
 <ul class="nav nav-pills">
   {% assign tags_list = site.tags %}
   {% include JB/tags_list %}
@@ -19,3 +19,4 @@ group: navigation
     {% include JB/pages_list %}
   </ul>
 {% endfor %}
+</div>
