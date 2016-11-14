@@ -4,7 +4,7 @@
      <div class="border no-right-border">Sh</div><div class="border">it</div>
      {% if page.tagline %}<div style="font-size: 50%;">{{ page.tagline }}</div>{% endif %}
    </div>
-   <div class="img-src" style="background-image: url('{{ BASE_PATH }}/assets/img/cover_4.jpg')"></div>
+   <div class="img-src" style="background-image: url('{{ BASE_PATH }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')')"></div>
    <div class='img-src blur' style="background-image: url('{{ BASE_PATH }}/assets/img/cover_4_blur.jpg')"></div>
 </div>
 
@@ -14,7 +14,7 @@
 <div class="main">
     <div class="container tim-container" style="max-width:800px; padding-top:100px">
     <div class="divider"></div>
-      
+
     <div class="tim-title">
         <h1><span class="glyphicon glyphicon-time"></span> Posted on <small class="subtitle">{{ page.date | date_to_long_string }}</small> </h1>
     </div>
