@@ -56,11 +56,11 @@ group: navigation
         <ul class="fa-ul">
       {% endif %}
 
-          <li><i class="fa-li fa fa-square fa-2x"></i> <!-- fa-arrow-right -->
-          <h3>
+          <li><i class="fa-li fa fa-square fa-2x"></i> <!-- fa-arrow-right --><div class="tim-typo">
+          <h1>
             <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            <small class="hidden-xs">{{ post.date | date: "%B %-d, %Y" }}</small>
-          </h3>
+            <small class="subtitle">{{ post.date | date: "%B %-d, %Y" }}</small>
+          </h1></div>
           </li>
       {% if forloop.last %}
         </ul>
@@ -69,7 +69,7 @@ group: navigation
         {% if this_year != next_year %}
           </ul>
         </div>
-        <div class="col-md-12 content-panel articles">
+        <div class="container tim-container">
           <h2 id="{{ next_year }}-ref">{{next_year}}</h2>
           <ul class="fa-ul">
         {% endif %}
