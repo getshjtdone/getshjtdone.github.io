@@ -6,7 +6,7 @@ tags : [intro, beginner, jekyll, tutorial]
 ---
 {% include JB/setup %}
 
-![Jekyll Logo]({{ site.url }}/assets/images/jekyll-logo-light-solid.png)
+![Jekyll Logo]({{ site.url }}/assets/images/jekyll-logo-light-solid.png){: .resp-image }
 
 
 Jekyll is a parsing engine bundled as a ruby gem used to build static websites from
