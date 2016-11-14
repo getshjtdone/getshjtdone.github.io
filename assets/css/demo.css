@@ -402,3 +402,8 @@
     display: inline-block;
     margin-bottom: 25px;
 }
+.img-full{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
