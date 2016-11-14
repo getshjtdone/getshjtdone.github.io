@@ -176,7 +176,7 @@
     <script src="{{ ASSET_PATH }}/resources/bootstrap/js/bootstrap.min.js"></script>
 -->
 
-      {% if site.safe == false %}
+      {% if site.JB.comments.disqus.short_name == true %}
       <script id="dsq-count-scr" src="//{{ site.JB.comments.disqus.short_name }}.disqus.com/count.js" async></script>
       {% endif %}
       <script src="{{ BASE_PATH }}/jquery/jquery-1.10.2.js" type="text/javascript"></script>
