@@ -14,7 +14,7 @@ excerpt_separator: "<!--more-->"
 #
 title : Getshjtdone
 tagline: Done your Shit fast
-author : 
+author :
   name : Getshjtdone
   email : lantoniotrento@gmail.com
   github : antoniotrento
@@ -84,9 +84,9 @@ JB :
   # Set 'provider' to false to turn commenting off globally.
   #
   comments :
-    provider : false
+    provider : disqus
     disqus :
-      short_name : jekyllbootstrap
+      short_name : getshjtdone
     livefyre :
       site_id : 123
     intensedebate :
