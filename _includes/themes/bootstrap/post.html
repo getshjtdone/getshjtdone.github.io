@@ -40,13 +40,13 @@
       {{ page.tags | join: ', ' }}
     </p>
 
-    {% endif %} 
+    {% endif %}
 
 
     {% unless page.tags == empty %}
     <h4>Tags</h4>
       <ul class="nav nav-pills">
-	      <!-- <li><i class="icon-tags"></i></li> -->
+	      <!--  -->
         {% assign tags_list = page.tags %}
         {% include JB/tags_list %}
       </ul>
