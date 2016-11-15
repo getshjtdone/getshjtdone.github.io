@@ -50,7 +50,7 @@ group: navigation
           {% for posts in category %}
             {% for post in posts %}
             {% if forloop.first %}{% endif %}
-            <li>
+            <li><div class="img-src" style="background-image: url('{{ BASE_PATH }}/assets/images{{ page.id }}.jpg')"></div>
               <h2>
                 <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                 <small class="subtitle">{{ post.date | date: "%B %-d, %Y" }}</small>
