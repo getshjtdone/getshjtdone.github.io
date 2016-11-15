@@ -46,15 +46,15 @@ group: navigation
       {% for category in site.categories %}
 
         <h2 id="{{ category | first }}-ref">{{ category | first }}</h2>
-        <ul class="fa-ul">
+        <ul class="list-unstyled">
           {% for posts in category %}
             {% for post in posts %}
             {% if forloop.first %}{% endif %}
-            <li><i class="fa-li fa fa-square fa-2x"></i> <!-- fa-arrow-right -->
-              <h1>
+            <li><i class="fa fa-square fa-2x"></i> <!-- fa-arrow-right -->
+              <h2>
                 <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                 <small class="subtitle">{{ post.date | date: "%B %-d, %Y" }}</small>
-              </h1>
+              </h2>
             </li>
             {% endfor %}
           {% endfor %}

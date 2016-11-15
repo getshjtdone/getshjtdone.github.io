@@ -51,14 +51,14 @@ group: navigation
       {% if forloop.first %}
 
         <h2 id="{{ this_year }}-ref">{{ this_year }}</h2>
-        <ul class="fa-ul">
+        <ul class="list-unstyled">
       {% endif %}
 
-          <li><i class="fa-li fa fa-square fa-2x"></i> <!-- fa-arrow-right -->
-          <h1>
+          <li><i class="fa fa-square fa-2x"></i> <!-- fa-arrow-right -->
+          <h2>
             <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             <small class="subtitle">{{ post.date | date: "%B %-d, %Y" }}</small>
-          </h1>
+          </h2>
           </li>
       {% if forloop.last %}
         </ul>
@@ -69,7 +69,7 @@ group: navigation
 
 
           <h2 id="{{ next_year }}-ref">{{next_year}}</h2>
-          <ul class="fa-ul">
+          <ul class="list-unstyled">
         {% endif %}
     {% endif %}
 
