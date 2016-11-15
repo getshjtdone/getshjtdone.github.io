@@ -37,7 +37,7 @@
 
     <p class="lead">
     <i class="fa fa-tags"></i>
-      {{ page.tags | join: ', ' }}
+      {{ <a>page.tags</a> | join: ', ' }}
     </p>
 
     {% endif %}
