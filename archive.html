@@ -59,6 +59,7 @@ group: navigation
             <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             <small class="subtitle">{{ post.date | date: "%B %-d, %Y" }}</small>
           </h2>
+          <div><img src="{{ BASE_PATH }}/assets/images{{ post.id }}.jpg" alt="Rounded Image" class="img-rounded img-responsive img-dog"></div>
           </li>
       {% if forloop.last %}
         </ul>
