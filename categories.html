@@ -50,7 +50,7 @@ group: navigation
           {% for posts in category %}
             {% for post in posts %}
             {% if forloop.first %}{% endif %}
-            <li><i class="fa fa-square fa-2x"></i> <!-- fa-arrow-right -->
+            <li>
               <h2>
                 <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                 <small class="subtitle">{{ post.date | date: "%B %-d, %Y" }}</small>
