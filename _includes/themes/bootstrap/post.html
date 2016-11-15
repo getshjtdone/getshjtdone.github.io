@@ -43,6 +43,14 @@
     {% endunless %}
 
     <hr>
+    {% if page.tags and page.tags.size > 0 %}
+<div class="tags">
+  <small>
+  <i class="fa fa-tags"></i>
+    {{ page.tags | join: ', ' }}
+  </small>
+</div>
+{% endif %}
 
     <ul class="nav nav-pills">
       {% if page.previous %}
