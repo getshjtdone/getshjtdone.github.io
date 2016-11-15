@@ -48,8 +48,9 @@ group: navigation
         <h2 id="{{ category | first }}-ref">{{ category | first }}</h2>
         <ul class="list-unstyled">
           {% for posts in category %}
+          {% if forloop.first %}{% else %}
             {% for post in posts %}
-            {% if forloop.first %}{% else %}
+
             <li>
               <h2>
                 <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
