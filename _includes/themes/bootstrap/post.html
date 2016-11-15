@@ -39,7 +39,7 @@
     {% unless page.tags == empty %}
     <h4>Tags</h4>
     <p class="lead">
-    <i class="fa fa-tags"></i>      Tagged under: {{page.tags | array_to_sentence_string}}
+          Tagged under:<i class="fa fa-tags"></i> {{page.tags | array_to_sentence_string}}
     </p>
     {% endunless %}
 
