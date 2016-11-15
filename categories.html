@@ -49,13 +49,13 @@ group: navigation
         <ul class="list-unstyled">
           {% for posts in category %}
             {% for post in posts %}
-            {% if forloop.first %}{% endif %}
+            {% if forloop.first %}
             <li><div><img src="{{ BASE_PATH }}/assets/images{{ post.id }}.jpg" alt="Rounded Image" class="img-rounded img-responsive img-dog"></div>
               <h2>
                 <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                 <small class="subtitle">{{ post.date | date: "%B %-d, %Y" }}</small>
               </h2>
-            </li>
+            </li>{% endif %}
             {% endfor %}
           {% endfor %}
 
