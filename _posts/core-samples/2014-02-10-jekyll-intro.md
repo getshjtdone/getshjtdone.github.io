@@ -200,7 +200,7 @@ Example:
         |-- bob
             |-- essay.html
 
-This page will be available at `http://yourdomain.com/people/bob/essay.html`
+This page will be available at `http:// yourdomain.com/people/bob/ essay.html`
 
 
 **Recommended Pages**  
