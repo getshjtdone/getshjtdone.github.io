@@ -38,10 +38,9 @@
 
     {% unless page.tags == empty %}
     <h4>Tags</h4>
-      <p class="lead">
-      <i class="fa fa-tags"></i>
-      <a href="{{ BASE_PATH }}/tags">  {{ page.tags | join: ', ' }}</a>
-      </p>
+    <p class="lead">
+        <i class="fa fa-tags"></i> Tagged under: {{post.tags | array_to_sentence_string}}
+    </p>
     {% endunless %}
 
     <hr>
