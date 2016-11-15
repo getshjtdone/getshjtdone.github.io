@@ -40,7 +40,7 @@
     <h4>Tags</h4>
       <p class="lead">
       <i class="fa fa-tags"></i>
-        {{ page.tags | join: ', ' }}
+      <a href="{{ BASE_PATH }}/tags">  {{ page.tags | join: ', ' }}</a>
       </p>
     {% endunless %}
 
