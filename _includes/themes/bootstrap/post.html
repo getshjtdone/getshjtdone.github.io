@@ -39,7 +39,7 @@
     {% unless page.tags == empty %}
     <h4>Tags</h4>
     <p class="lead">
-          <a><i class="fa fa-tags"></i></a>  {{page.tags | array_to_sentence_string}}
+          <a href="{{ BASE_PATH }}/tags" style="color:black"><i class="fa fa-tags"></i></a>  {{page.tags | array_to_sentence_string}}
     </p>
     {% endunless %}
 
