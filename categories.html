@@ -55,7 +55,7 @@ group: navigation
                 <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                 <small class="subtitle">{{ post.date | date: "%B %-d, %Y" }}</small>
               </h2>
-            </li>
+            </li>{% endif %}
             {% endfor %}
           {% endfor %}
 
