@@ -33,23 +33,15 @@
       </ul>
     {% endunless %}
     <br>
-    {% if page.tags and page.tags.size > 0 %}
 
-    <p class="lead">
-    <i class="fa fa-tags"></i>
-      {{ page.tags | join: ', ' }}
-    </p>
-
-    {% endif %}
 
 
     {% unless page.tags == empty %}
     <h4>Tags</h4>
-      <ul class="nav nav-pills">
-	      <!--  -->
-        {% assign tags_list = page.tags %}
-        {% include JB/tags_list %}
-      </ul>
+      <p class="lead">
+      <i class="fa fa-tags"></i>
+        {{ page.tags | join: ', ' }}
+      </p>
     {% endunless %}
 
     <hr>
