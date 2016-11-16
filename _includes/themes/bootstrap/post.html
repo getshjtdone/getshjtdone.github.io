@@ -57,7 +57,8 @@
           <a href="{{ BASE_PATH }}/tags" style="color:black"><i class="fa fa-tags"></i></a>   | {{page.categories | array_to_sentence_string}}
     </p>
     {% endunless %}
-
+  </div>
+  <div class="col-md-6 col-sm-10 text-right">
     {% unless page.tags == empty %}
     <h4>Tags</h4>
     <p class="lead">
