@@ -744,10 +744,15 @@ Controls etc.-->
     <div class="col-md-2">
       <h4>Controls and settings <small class="subtitle">choose view, link, dimensions of the mock-up</small></h4>
       <div id="controls">
-        <div>
-          <label for="iframeURL">URL:</label>
-          <input type="text" id="iframeURL" placeholder="https://getshjtdone.github.io" value="https://getshjtdone.github.io" />
-        </div>
+
+          <div class="input-group">
+          <!-- 	   Since the css properties cannot check the previous sibling of an element and for the design consistency we recommend to use the "input-group-addon" after the "form-control" like in this example -->
+              <input type="text" value="https://getshjtdone.github.io" class="form-control" id="iframeURL" placeholder="https://getshjtdone.github.io" value="https://getshjtdone.github.io" >
+              <span class="input-group-addon"><i class="fa fa-group"></i></span>
+              <label for="iframeURL">URL:</label>
+            </div>
+
+
         <div>
           <label for="iframeWidth">Width:</label>
           <input type="number" id="iframeWidth" placeholder="400" value="400" />
