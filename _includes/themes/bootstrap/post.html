@@ -22,7 +22,7 @@
             </div>
         </div>
     <div class="col-md-6 col-sm-10 text-right">
-      <ul style="x-index: 1000" class="social-nav model-3">
+      <ul class="social-nav model-4">
         <li><a href="https://twitter.com/vivinantony" class="twitter"><i class="fa fa-twitter"></i></a></li>
         <li>
           <a href="https://www.facebook.com/vivinantony" class="facebook"> <i class="fa fa-facebook"></i></a>
@@ -30,15 +30,17 @@
         <li><a href="https://plus.google.com/+VivinAntonyJ" class="google-plus"><i class="fa fa-google-plus"></i></a></li>
         <li><a class="linkedin"><i class="fa fa-linkedin"></i></a></li>
       </ul>
-    </div><div class="space-30"></div>
+    </div>
   </div>
 <div class="divider"></div>
 
     <div class="content">
       {{ content }}
     </div>
+    <div class="row">
 
-    <ul class="social-nav model-7">
+        <div class="col-md-6 col-sm-10">
+    <ul class="social-nav model-4">
   <li><a href="https://twitter.com/vivinantony" class="twitter"><i class="fa fa-twitter"></i></a></li>
   <li>
     <a href="https://www.facebook.com/vivinantony" class="facebook"> <i class="fa fa-facebook"></i></a>
@@ -46,7 +48,8 @@
   <li><a href="https://plus.google.com/+VivinAntonyJ" class="google-plus"><i class="fa fa-google-plus"></i></a></li>
   <li><a class="linkedin"><i class="fa fa-linkedin"></i></a></li>
 </ul>
-
+</div>
+<div class="col-md-6 col-sm-10 text-right">
 
     <br>
     {% unless page.categories == empty %}
@@ -61,7 +64,8 @@
           <a href="{{ BASE_PATH }}/tags" style="color:black"><i class="fa fa-tags"></i></a>   | {{page.tags | array_to_sentence_string}}
     </p>
     {% endunless %}
-
+  </div>
+</div>
     <hr>
 
 
