@@ -14,12 +14,16 @@ excerpt_separator: "<!--more-->"
 #
 title : Getshjtdone
 tagline: Done your Shit fast
-author : 
+author :
   name : Getshjtdone
   email : lantoniotrento@gmail.com
   github : antoniotrento
   twitter : lantoniotrento
   feedburner : johndoefeedname
+
+
+
+twitter_username: lantoniotrento
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt
