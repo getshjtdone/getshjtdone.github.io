@@ -49,7 +49,7 @@
   <li><a class="linkedin"><i class="fa fa-linkedin"></i></a></li>
 </ul>
 </div>
-<div class="col-md-4">
+<div class="col-md-4 text-center">
 
     <br>
     {% unless page.categories == empty %}
@@ -58,7 +58,7 @@
     </p>
     {% endunless %}
   </div>
-  <div class="col-md-4">
+  <div class="col-md-4 text-center">
     {% unless page.tags == empty %}
     <p class="lead">
           <a href="{{ BASE_PATH }}/tags" style="color:black"><i class="fa fa-tags"></i></a>   | {{page.tags | array_to_sentence_string}}
