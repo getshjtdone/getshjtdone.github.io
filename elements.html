@@ -702,13 +702,6 @@ group: navigation
   </div>
 </div> <!-- end carousel -->
 
-<!--The Main Thing-->
-<div id="wrapper">
-<div class="phone view_1" id="phone_1">
-  <iframe src="http://codepen.io" id="frame_1"></iframe>
-</div>
-</div>
-
 
 
 <!--
@@ -731,10 +724,21 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
  http://codepen.io/FelixRilling/pen/vLRNvb A PEN BY Felix Rilling
 
 Controls etc.-->
+<div class="main">
+    <div class="container tim-container">
+<!--The Main Thing-->
+<div id="wrapper">
+<div class="phone view_1" id="phone_1">
+  <iframe src="https://getshjtdone.github.io" id="frame_1"></iframe>
+</div>
+</div>
+
+
+
 <div id="controls">
   <div>
     <label for="iframeURL">URL:</label>
-    <input type="text" id="iframeURL" placeholder="http://codepen.io" value="http://codepen.io" />
+    <input type="text" id="iframeURL" placeholder="https://getshjtdone.github.io" value="https://getshjtdone.github.io" />
   </div>
   <div>
     <label for="iframeWidth">Width:</label>
@@ -791,3 +795,6 @@ document.getElementById("views").addEventListener("click", function(evt) {
   updateView(evt.target.value);
 });
 </script>
+
+</div>
+</div>
