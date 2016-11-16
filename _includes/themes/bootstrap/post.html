@@ -33,7 +33,9 @@
       </ul>
     {% endunless %}
     <br>
-
+    <p class="lead">
+          <a href="{{ BASE_PATH }}/tags" style="color:black"><i class="fa fa-tags"></i></a>   | {{page.categories | array_to_sentence_string}}
+    </p>
 
 
     {% unless page.tags == empty %}
