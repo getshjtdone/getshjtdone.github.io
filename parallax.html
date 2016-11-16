@@ -279,3 +279,37 @@ group: navigation
 </div>
 <!-- end main -->
 <!-- END LANDING PAGE  -->
+
+
+<div class="main">
+    <div class="container tim-container">
+      <!--The Main Thing-->
+      <div id="wrapper">
+      <div class="phone view_1" id="phone_1" style="width: 350px; height: 600px;">
+        <iframe src="https://getshjtdone.github.io" id="frame_1"></iframe>
+      </div>
+      </div>
+    </div>
+</div>
+<script>
+
+var phone = document.getElementById("phone_1"),
+  iframe = document.getElementById("frame_1");
+
+/*View*/
+function updateView(view) {
+  if (view) {
+    phone.className = "phone view_" + view;
+  }
+}
+
+/*Controls*/
+function updateIframe() {
+
+
+  /*Idea by /u/aerosole*/
+  document.getElementById("wrapper").style.perspective = ("1000px");
+}
+updateIframe();
+
+</script>
