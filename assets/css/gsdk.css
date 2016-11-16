@@ -50,46 +50,6 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 }
 /*Controls*/
 
-#controls {
-
-  top: 20px;
-  left: 20px;
-  font-size: 0.9em;
-  color: #333;
-}
-
-#controls div {
-  margin: 10px;
-}
-
-#controls div label {
-  width: 120px;
-  display: block;
-  float: left;
-}
-
-#views {
-  
-  top: 20px;
-  right: 20px;
-  width: 200px;
-}
-
-#views button {
-  width: 198px;
-  border: 1px solid #bbb;
-  background-color: #fff;
-  height: 40px;
-  margin: 10px 0;
-  color: #666;
-  transition: all 0.2s;
-}
-
-#views button:hover {
-  color: #444;
-  background-color: #eee;
-}
-
 @media (max-width:900px) {
   #wrapper {
     transform: scale(0.8, 0.8);
