@@ -41,21 +41,12 @@
   <li><a class="linkedin"><i class="fa fa-linkedin"></i></a></li>
 </ul>
 
-
+    <br>
     {% unless page.categories == empty %}
-    <br>
-    <h4>Categories</h4>
-      <ul class="nav nav-pills">
-	      <!-- <li><i class="icon-folder-open"></i></li> -->
-        {% assign categories_list = page.categories %}
-        {% include JB/categories_list %}
-      </ul>
-    {% endunless %}
-    <br>
     <p class="lead">
           <a href="{{ BASE_PATH }}/tags" style="color:black"><i class="fa fa-tags"></i></a>   | {{page.categories | array_to_sentence_string}}
     </p>
-
+    {% endunless %}
 
     {% unless page.tags == empty %}
     <h4>Tags</h4>
