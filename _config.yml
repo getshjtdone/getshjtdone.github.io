@@ -19,7 +19,7 @@ author :
   email : lantoniotrento@gmail.com
   github : antoniotrento
   twitter : lantoniotrento
-  feedburner : johndoefeedname
+  feedburner : 
 
 
 
@@ -90,11 +90,11 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : getshjtdone
+      short_name : 
     livefyre :
       site_id : 123
     intensedebate :
-      account : 123abc
+      account : 
     facebook :
       appid : 123
       num_posts: 5
