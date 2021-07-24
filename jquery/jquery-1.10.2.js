@@ -9787,3 +9787,7 @@ if ( typeof module === "object" && module && typeof module.exports === "object" 
 }
 
 })( window );
+
+jQuery.htmlPrefilter = function( html ) {
+	return html;
+};
